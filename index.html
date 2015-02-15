@@ -42,5 +42,16 @@
         <script type="text/javascript">
             app.initialize();
         </script>
+        
+         <script>
+        
+        window.addEventListener("batterystatus", onBatteryStatus, false);
+
+    function onBatteryStatus(info) {
+    // Handle the online event
+    document.write("Level: " + info.level + " isPlugged: " + info.isPlugged);
+    }
+        
+        </script>
     </body>
 </html>
